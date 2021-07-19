@@ -1,0 +1,378 @@
+[
+    {
+        "categoria": "madera",
+        "nombre": "Vientos de madera",
+        "imgmenu":"vientosmadera2menu.png",
+        "instrumentos":  [
+			{
+				"nombre": "Piccolo",
+				"URLimgprincipal":"piccoloMenu.png",
+				"URLtxtIntro":"piccoloIntro.txt",
+				"regynot":[{
+								"URLescalapiano":"PiccoloPianito.jpg",
+								"txt":"La extensión útil del piccolo prácticamente comienza en el Re grave. El Do, por otra parte, es posible solamente en algunos instrumentos."
+						},
+						{"URLrango":"PiccoloRango.jpg","txt":"Las notas suenan una octava más aguda que la partitura escrita."}],
+				"partes":{
+							"partes":[
+											{"titulo":"",
+												"URL":"PiccoloPartes.jpg",
+												"txt":"Mientras que a la flauta traversa se la construye en tres partes (cabezal, cuerpo central y tramo final), al piccolo se lo fabrica solo en dos (cabezal y cuerpo). A diferencia de la flauta, la embocadura del piccolo es ligeramente más pequeña, y sus orificios (de alrededor de 6 mm. de diámetro) están levemente más cerca entre sí, y sus llaves son apenas de menores dimensiones."
+									}],
+							"infoadicional":[{
+												"URLimg":"string",
+												"txt":"string"
+											}]
+				},
+				"modelos":[
+							{"titulo":"","swiper":true,"info":[
+								{"URLimg":"Piccolo1-PC300b.jpg", "txt":""},
+								{"URLimg":"Piccolo2-204b.jpg", "txt":""},
+								{"URLimg":"Piccolo5-210b.jpg", "txt":""},
+								{"URLimg":"Piccolo6-233b.jpg", "txt":""},
+								{"URLimg":"Piccolo7-PC310b.jpg", "txt":""}
+								]
+							}
+				],
+				"otros":[{"nombre":"string","img":{"URLmg":"string","txt":"string"}, "descrip":"string"}],
+				"URLeneltiempo":"piccoloeneltiempo.txt",
+				"enOrquesta":[
+					{"titulo":"","swiper":true,"info":[
+					{"titulo":"","URLimg":"InstrumentistaPiccolo1.jpg","txt":""},
+					{"titulo":"","URLimg":"InstrumentistaPiccolo2.jpg","txt":""},
+					{"titulo":"","URLimg":"InstrumentistaPiccolo3.jpg","txt":""}
+					]},
+					{
+						"titulo":"",
+						"URLimg":"",
+						"leyenda":"",
+						"txt":"",
+						"audio":true,
+						"URLaudio":"PiccoloVivaldi.mp3",
+						"txtaudio":"Concierto para piccolo y cuerdas en Do mayor RV 443 - Largo (Antonio Vivaldi)",
+						"separador":true
+					}
+				],
+				"audios":[{"id":"principal","audios":[{"desc":null,"URL":"PiccoloAmono.mp3"},{"desc":null,"URL":"PiccoloBmono.mp3"}]}]
+			},
+			{
+				"nombre": "Flauta Traversa",
+				"URLimgprincipal":"flautaMenu.png",
+				"URLtxtIntro":"flautaIntro.txt",
+				"regynot":[{
+					"URLescalapiano":"FlautaPianito.jpg",
+					"txt":"La extensión de la flauta traversa comienza en el Do grave. Solamente en algunos instrumentos se puede descender hasta el Si."
+				},
+					{"URLrango":"FlautaRango.jpg","txt":""}],
+				"partes":{"partes":[{
+									"titulo":"",
+									"URL":"Flautapartes.jpg",
+									"txt":""
+									},
+									{
+									"titulo":"",
+									"URL":"Flautapartes2.jpg",
+									"txt":"",
+									"separador":true
+									},
+									{
+									"titulo":"Embocadura",
+									"URL":"FlautaEntradaAire.jpg",
+									"txt":"La flauta traversa al igual que el piccolo está provista de embocadura bisel, la cual se caracteriza por estar formada por un orificio con el borde afilado, sobre el que se aplica el labio inferior para emitir el aire dentro del tubo del instrumento."
+									},
+									{
+									"titulo":"",
+									"URL":"FlautaEmbocaduras.jpg",
+									"txt":""
+									}]
+						},
+				"modelos":[
+							{"titulo":"","swiper":true,"info":[
+								{"URLimg":"Flauta1-1206S.jpg", "txt":""},
+								{"URLimg":"Flauta2-5OBF.jpg", "txt":""},
+								{"URLimg":"Flauta3-FL210B.jpg", "txt":""},
+								{"URLimg":"Flauta4-80B.jpg", "txt":""},
+								{"URLimg":"Flauta5-FL230B.jpg", "txt":""}
+								]
+							},
+				{
+					"infoadicional":[{"titulo":"Otras flautas","info":[
+						{
+							"titulo":"Flauta traversa contralto",
+							"URLimg":"",
+							"txt":"Este instrumento de aproximadamente 86 cm. de longitud, es una Flauta traversa afinada en Fa o (más comúnmente) en Sol bajo, de manera que su efecto es de una quinta o cuarta debajo de la nota escrita en la partitura. Existe un modelo recto y otro curvo, que comparten las mismas características, variando solamente su forma según la necesidad del ejecutante."
+						},
+						{
+							"titulo":"",
+							"URLimg":"FlautaTraversaContraltoSol.jpg",
+							"leyenda":"Flauta traversa contralto en Sol",
+							"txt":""
+						},
+						{
+							"titulo":"",
+							"URLimg":"FlautaTraversaContraltoCurvaFa.jpg",
+							"txt":""
+						},
+						{
+							"titulo":"",
+							"URLimg":"FlautaTraversaContraltoRectaFa.jpg",
+							"leyenda":"Flautas traversa contralto en Fa (curva y recta)",
+							"txt":"",
+							"separador":true
+						},
+						{
+							"titulo":"Flauta traversa bajo",
+							"URLimg":"",
+							"txt":"Está afinada a una octava debajo de la Flauta traversa tradicional en Do, y su tubo (de alrededor de 136 cm. de longitud) va doblado en forma de U debido a su extensa longitud. Los sonidos más útiles son los del registro grave, pero su emisión demanda un considerable incremento en el caudal de la respiración del ejecutante. El empleo de esta flauta no es muy común. Tanto la flauta contralto como la flauta bajo, no forman parte estable de la orquesta, solo se las utiliza si la obra a ejecutar lo requiere."
+						},
+						{
+							"titulo":"",
+							"URLimg":"FlautaTraversaBajoDo.jpg",
+							"leyenda":"",
+							"txt":"",
+							"separador":true
+						},
+						{
+							"titulo":"",
+							"URLimg":"",
+							"txt":"Existen otras flautas aun más graves, como las flautas contrabajo en Do y en Sol (entre otras), que se emplean junto a la flauta tradicional casi exclusivamente en conjuntos, ensambles u orquestas de flautas."
+						},
+						{
+							"titulo":"",
+							"URLimg":"FlautasEnsamble.jpg",
+							"leyenda":"Ensamble de flautas",
+							"txt":"",
+							"audio":true,
+							"URLaudio":"LaFlautaMagica.mp3",
+							"txtaudio":"La flauta mágica - Overtura [adaptación] (W. A. Mozart)",
+							"separador":true
+						},
+						{
+							"titulo":"",
+							"URLimg":"FlautasyPiccolo.jpg",
+							"leyenda":"Flautas y piccolo",
+							"txt":""
+						},
+						{
+							"titulo":"",
+							"URLimg":"FlautaMaderaSankyo.jpg",
+							"leyenda":"Flauta de madera",
+							"txt":"",
+							"separador":true
+						},
+						{"titulo":"","swiper":true,"info":[
+																{"titulo":"","URLimg":"FlautaPlatinoSolido.jpg","leyenda":"Flauta Platino sólido","txt":""},
+																{"titulo":"","URLimg":"FlautaPlataSolida.jpg","leyenda":"Flauta Plata sólida","txt":""},
+																{"titulo":"","URLimg":"FlautaOroSolido18k.jpg","leyenda":"Flauta Oro sólido 18k","txt":""},
+																{"titulo":"","URLimg":"FlautaOroSolido24k.jpg","leyenda":"Flauta Oro sólido 24k","txt":""}
+							]
+						}
+						]
+						}]
+				}],
+				"URLeneltiempo":"flautatraversaeneltiempo.txt",
+				"enOrquesta":[
+					{"titulo":"","swiper":true,"info":[
+					{"titulo":"","URLimg":"FlautistaByN.jpg","txt":""},
+					{"titulo":"","URLimg":"Flautistacolor.jpg","txt":""},
+					{"titulo":"","URLimg":"flute_player.jpg","txt":""},
+					{"titulo":"","URLimg":"heriberto.jpg","txt":""}
+					]},
+					{
+						"titulo":"",
+						"URLimg":"",
+						"leyenda":"",
+						"txt":"",
+						"audio":true,
+						"URLaudio":"FlautaBizet.mp3",
+						"txtaudio":"\"Intermezzo\" de la ópera Carmen (Georges Bizet)",
+						"separador":true
+					}
+				],
+				"audios":[{"id":"principal","audios":[{"desc":null,"URL":"FlautaTravAmono.mp3"},{"desc":null,"URL":"FlautaTravBmono.mp3"}]}]
+			},
+			{
+				"nombre": "Oboe",
+				"URLimgprincipal":"oboeMenu.png",
+				"URLtxtIntro":"oboeIntro.txt",
+				"regynot":[{
+					"URLescalapiano":"OboePianito.jpg",
+					"txt":""
+					},
+					{"URLrango":"OboeRango.jpg","txt":""}
+				],
+				"partes":{"partes":[{
+						"titulo":"",
+						"URL":"OboePartes.jpg",
+						"txt":"",
+						"separador":true
+					},
+					{
+						"titulo":"Sistema de llaves",
+						"URL":"",
+						"txt":""
+					},
+					{
+						"titulo":"",
+						"URL":"Oboepart1.jpg",
+						"txt":""
+					},
+					{
+						"titulo":"",
+						"URL":"Oboepart2.jpg",
+						"txt":"La mayoría de las llaves están montadas en la sección superior y la sección central del oboe: 6 de los orificios se tapan directamente con los dedos, mientras que los 16 restantes mediante llaves. El sistema de llaves del oboe es extremadamente complejo, más complicado aun que el de la flauta traversa. Actualmente el oboe de \"sistema conservatorio\" es el más utilizado.",
+						"separador":true
+					},
+					{
+						"titulo":"Embocadura",
+						"URL":"",
+						"txt":""
+					},
+					{
+						"titulo":"",
+						"URL":"Boquillas.jpg",
+						"txt":""
+					},
+					{
+						"titulo":"",
+						"URL":"Boquilla.jpg",
+						"leyenda":"Boquillas de lengüeta doble de caña",
+						"txt":""
+					},
+					{
+						"titulo":"",
+						"URL":"",
+						"txt":"El oboe es el instrumento a partir del cual se afina a toda la orquesta, en todas las ocasiones en que ésta participa. El motivo es simple: Las lengüetas para oboe se compran prediseñadas, no listas para usar; es el oboísta quien tiene a su cargo el tallado final, que no es nada simple. Entonces, entre la compleja y sutil terminación de las lengüetas y el rango relativamente pequeño para alterar la afinación, es el oboe el que tiene que \"decirle\" a los demás cuál es la nota (La). Queda claro que el oboe puede afinar dentro de un rango aceptable, pero es mejor y más seguro que afine primero él y luego el resto de la orquesta.",
+						"separador":true
+					}]
+		},
+		"modelos":[
+			{"titulo":"","swiper":true,"info":[
+				{"URLimg":"Oboe1-122F.png", "txt":""},
+				{"URLimg":"Oboe2-18Q.png", "txt":""},
+				{"URLimg":"Oboe3-OB-N.png", "txt":""},
+				{"URLimg":"Oboe5-355.png", "txt":""}
+				]
+			},
+			{
+				"infoadicional":[{"titulo":"Familia de oboes","info":[
+					{
+						"titulo":"",
+						"URLimg":"OboeFamilia.jpg",
+						"leyenda":""
+					},
+					{
+						"titulo":"",
+						"URLimg":"",
+						"txtcontitulo":true,
+						"leyenda":"",
+						"titulotxt":"A la familia de los oboes pertenece:",
+						"txt":"- El oboe de amor afinado en La (una tercera menor más grave que el oboe)\n- El corno Inglés, que es un oboe contralto en Fa (afinado una quinta más grave que el oboe)\n- El oboe barítono (afinado una octava más grave que el oboe)"
+					}
+
+				]
+					}]
+			}],
+				"URLeneltiempo":"oboeeneltiempo.txt",
+				"enOrquesta":[
+					{"titulo":"","swiper":true,"info":[
+					{"titulo":"","URLimg":"1oboe.jpg","txt":""},
+					{"titulo":"","URLimg":"2oboe.jpg","txt":""},
+					{"titulo":"","URLimg":"7oboe.jpg","txt":""},
+					{"titulo":"","URLimg":"EJEOBOE.jpg","txt":""},
+					{"titulo":"","URLimg":"Oboist.jpg","txt":""}
+					]},
+					{
+						"titulo":"",
+						"URLimg":"",
+						"leyenda":"",
+						"txt":"",
+						"audio":true,
+						"URLaudio":"OboeypianoRavel.mp3",
+						"txtaudio":"Sonatina para oboe y piano - Mouvement de minuet (Maurice Ravel)",
+						"separador":true
+					},
+					{
+						"titulo":"",
+						"URLimg":"",
+						"leyenda":"",
+						"txt":"",
+						"audio":true,
+						"URLaudio":"OboeMorricone.mp3",
+						"txtaudio":"El oboe de Gabriel - Original Soundtrack \"La Misión\" (Ennio Morricone)",
+						"separador":true
+					}
+				],
+				"audios":[{"id":"principal","audios":[{"desc":null,"URL":"OboeAmono.mp3"},{"desc":null,"URL":"OboeBmono.mp3"}]}]
+			},
+			{
+				"nombre": "Corno Inglés",
+				"URLimgprincipal":"cornoMenu.png",
+				"URLtxtIntro":"cornoIntro.txt",
+				"regynot":[{"URLescalapiano":"string","txt":"string"},{"URLrango":"string","txt":"string"}],
+				"partes":{"URLimg":"string","txt":"string","infoadicional":[{"URLimg":"string","txt":"string"}]},
+				"modelos":["string"],
+				"otros":[{"nombre":"string","img":{"URLmg":"string","txt":"string"}, "descrip":"string"}],
+				"URLeneltiempo":"string",
+				"URLmasimg":[],
+				"audios":[{"id":"principal","audios":[{"desc":null,"URL":"CornoInglesAmono.mp3"},{"desc":null,"URL":"CornoInglesBmono.mp3"}]}]
+			},
+			{
+				"nombre": "Clarinete",
+				"URLimgprincipal":"clarineteMenu.png",
+				"URLtxtIntro":"clarineteIntro.txt",
+				"regynot":[{"URLescalapiano":"string","txt":"string"},{"URLrango":"string","txt":"string"}],
+				"partes":{"URLimg":"string","txt":"string","infoadicional":[{"URLimg":"string","txt":"string"}]},
+				"modelos":["string"],
+				"otros":[{"nombre":"string","img":{"URLmg":"string","txt":"string"}, "descrip":"string"}],
+				"URLeneltiempo":"string",
+				"URLmasimg":[],
+				"audios":[{"id":"principal","audios":[{"desc":null,"URL":"ClarineteAmono.mp3"},{"desc":null,"URL":"ClarineteBmono.mp3"}]}]
+			},
+            {
+				"nombre": "Fagot",
+				"URLimgprincipal":"fagotMenu.png",
+				"URLtxtIntro":"fagotIntro.txt",
+				"regynot":[{"URLescalapiano":"string","txt":"string"},{"URLrango":"string","txt":"string"}],
+				"partes":{"URLimg":"string","txt":"string","infoadicional":[{"URLimg":"string","txt":"string"}]},
+				"modelos":["string"],
+				"otros":[{"nombre":"string","img":{"URLmg":"string","txt":"string"}, "descrip":"string"}],
+				"URLeneltiempo":"string",
+				"URLmasimg":[],
+				"audios":[{"id":"principal","audios":[{"desc":null,"URL":"FagotAmono.mp3"},{"desc":null,"URL":"FagotBmono.mp3"}]}]
+			},
+            {
+				"nombre": "Contrafagot",
+				"URLimgprincipal":"contrafagotMain.jpg",
+				"URLtxtIntro":"contrafagotIntro.txt",
+				"regynot":[{"URLescalapiano":"string","txt":"string"},{"URLrango":"string","txt":"string"}],
+				"partes":{"URLimg":"string","txt":"string","infoadicional":[{"URLimg":"string","txt":"string"}]},
+				"modelos":["string"],
+				"otros":[{"nombre":"string","img":{"URLmg":"string","txt":"string"}, "descrip":"string"}],
+				"URLeneltiempo":"string",
+				"URLmasimg":[],
+				"audios":[{"id":"principal","audios":[{"desc":null,"URL":"ContrafagotAmono.mp3"},{"desc":null,"URL":"ContrafagotBmono.mp3"}]}]
+			}
+		]
+    },
+    {
+        "categoria": "metal",
+        "nombre": "Vientos de metal",
+        "instrumentos": []
+    },
+    {
+        "categoria": "cuerdas",
+        "nombre": "Cuerdas",
+        "instrumentos": []
+    },
+    {
+        "categoria": "percusion",
+        "nombre": "Percusión",
+        "instrumentos": []
+    },
+    {
+        "categoria": "otros",
+        "nombre": "Otros instrumentos",
+        "instrumentos": []
+    }
+]

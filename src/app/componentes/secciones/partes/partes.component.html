@@ -1,0 +1,16 @@
+<div style="margin-left: 10px; margin-right: 10px; text-align: center;">
+    <h1 class="estiloTituloSecciones">Partes</h1>
+
+    <div class="containerSecciones">
+        <div *ngFor="let parte of partesPrincipal">
+            <h3 *ngIf="parte != '' ">{{parte.titulo}}</h3>
+            <div>
+                <img class="mx-auto d-block img-fluid mt-3 mb-3 " src="../../../../assets/categorias/{{instrumento.categoria}}/{{instrumento.instrumento}}/img/partes/{{parte.URL}}" alt="">
+            </div>
+            <span class="leyenda">{{parte.leyenda}}</span>
+            <p *ngIf="parte.txt != ''" style="margin-bottom: 20px;">{{parte.txt}}</p>
+            <img *ngIf="parte.separador" style="margin-bottom: 30px;" src="../../../../assets/img/note separador.gif">
+        </div>
+    </div>
+
+</div>

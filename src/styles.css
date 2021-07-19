@@ -1,0 +1,489 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~swiper/swiper-bundle';
+
+@font-face {
+    font-family: FrancoisOne;
+    src: url(./assets/fuentes/FrancoisOne-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Bkant;
+    src: url(./assets/fuentes/BKANT.TTF) format('truetype');
+}
+
+@media (max-width: 992px){
+
+    .containerInstrumento{
+        height: 100% !important;
+        position:relative !important;
+    }
+
+    .containerSonidosPrincipalesIntr{
+        margin-bottom:30px !important;
+    }
+
+    .containerSecciones{
+        height: 100% !important;
+        position:unset !important;
+
+    }
+
+    .Menu-desplegable-secciones{
+        display: block !important;
+    }
+
+    .containerModelos{
+        height: 100% !important;
+        position:unset !important;
+        width: unset !important;
+    }
+
+    .imgCategoriaMenu{
+        height: 10vw !important;
+    }
+
+    .categoriaNombre{
+        font-size: 5vw !important;
+        margin-left: -80px !important;
+        width: 60% !important;
+        margin-top: 2vw !important;
+    }
+
+    .introTexto{
+        max-height:unset !important;
+    }
+}
+
+@media (max-width: 768px){
+    .div-img{
+        width: 40vw !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .tituloCentral {
+      font-size: 20vw !important;
+    }
+
+    .subtituloCentral{
+        font-size: 4vw !important;
+    }
+
+    .div-img{
+        width: 60vw !important;
+    }
+
+    .imgCategoriaMenu{
+        height: 14vw !important;
+    }
+
+    .categoriaNombre{
+        font-size: 7vw !important;
+        margin-left: -40px !important;
+        width: 60% !important;
+        margin-top: 2vw !important;
+    }
+
+}
+
+/*---------------------- Configuracion del scrollbar general ---------------------*/
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border: 4px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    border-radius: 9999px;
+    background-color: #AAAAAA;
+  }
+
+  ::-webkit-scrollbar-track:vertical {
+    border:8px solid rgba(0,0,0,.2);
+}
+
+::-webkit-scrollbar-track:horizontal {
+    border-bottom:8px solid rgba(0,0,0,.2);
+}
+
+/* para personalizar el scrollbar a un elemento en particular usar la pseudoclase ::-webkit-scrollbar delante de la etiqueta, clase, etc*/
+/*---------------------- Fin Configuracion del scrollbar general ---------------------*/
+
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    background: rgb(153,153,153);
+    background: linear-gradient(90deg, rgba(153,153,153,1) 0%, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 80%, rgba(153,153,153,1) 100%);
+    background-image: url(./assets/img/fondo.png);
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.botonVientosMadera{
+
+    background: url(../src/assets/recursos/vientosmadera2.jpg) no-repeat left center;
+
+}
+
+  .botonVientosMadera:hover, .botonVientosMetal:hover, .botonCuerdas:hover, .botonPercusion:hover, .botonOtrosInstrumentos:hover, .botonOrquesta:hover {
+    -webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
+    filter: grayscale(0%);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    overflow:auto;
+    -webkit-box-shadow: inset 0px 0px 30px 1px #FFFFFF; 
+    box-shadow: inset 0px 0px 30px 1px #FFFFFF;
+    color:rgba(255,255,255,1);
+    text-shadow: 2px 2px 8px black;
+
+  }
+
+.botonVientosMetal{
+
+    background: url(../src/assets/recursos/vientosdemetal2.jpg) no-repeat left top;
+
+}
+
+.botonGeneral{
+    height: 10em;
+    background-size: cover;
+    transition: all 0.5s ease;
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+    transition: all 0.5s ease;
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+    display: block;
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+    text-align: center;
+}
+
+.botonCuerdas{
+
+    background: url(../src/assets/recursos/cuerdas2.jpg) no-repeat left top;
+
+}
+
+.botonPercusion{
+
+    background: url(../src/assets/recursos/percusion2Escalado.jpg) no-repeat left center;
+
+}
+
+.botonOtrosInstrumentos{
+
+    background: url(../src/assets/recursos/pianoEscalado.jpg) no-repeat left 80%;
+
+}
+
+.botonOrquesta{
+
+    background: url(../src/assets/recursos/orquestaEscalado2.jpg) no-repeat left center;
+
+}
+
+.botonTitulo{
+    position: absolute;
+    font-size: 25px;
+    background: rgba(255,255,255, 0.4);
+    padding: 10px;
+    width:100%;
+}
+
+
+
+.categoriaContainer{
+    height: 6vw;
+    margin-left: 0;
+    padding-left: 0;
+    display: flex;
+    width: 100%;
+}
+
+.imgCategoriaMenu{
+    background: url(./assets/categorias/madera/menu.png) left center;
+    width: 25vw;
+    background-size: cover;
+    float: left;
+    height: auto;
+}
+
+.categoriaNombre{
+    font-family: FrancoisOne;
+    font-size: 4vw;
+    margin-left: -100px;
+    width: 40%;
+
+}
+
+.containerSonidosPrincipalesIntr{
+    margin-top: -60px;
+}
+
+.instrumentoMenu{
+    width: auto;
+    text-align: center;
+    margin-bottom: 20px;
+    display:table;
+    position: relative;
+    margin:0 auto;
+    margin-top:20px;
+    overflow: hidden;
+}
+
+
+
+.img{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;   
+    transform:scale(1);
+    -ms-transform:scale(1); /* IE 9 */ 
+    -moz-transform:scale(1); /* Firefox */ 
+    -webkit-transform:scale(1); /* Safari and Chrome */ 
+    -o-transform:scale(1); /* Opera */ 
+    -webkit-transition: all 500ms ease-in-out; /* IE 9 */
+    -moz-transition: all 500ms ease-in-out; /* Firefox */
+    -ms-transition: all 500ms ease-in-out; /* Safari and Chrome */
+    -o-transition: all 500ms ease-in-out; /* Opera  */
+    transition: 0.4s;    
+    z-index: -10;
+    image-rendering: -moz-crisp-edges; 
+}    
+
+.div-img:hover{
+    transform:scale(1.1);
+    -ms-transform:scale(1.1); /* IE 9 */ 
+    -moz-transform:scale(1.1); /* Firefox */ 
+    -webkit-transform:scale(1.1); /* Safari and Chrome */
+    -o-transform:scale(1.1); /* Opera */
+    z-index: 0;
+    image-rendering: -moz-crisp-edges; 
+}
+
+.div-img{
+    transition: transform .4s ease-in-out;
+    width: 20vw;
+    margin-bottom: 10px;
+    perspective: 500px;
+}
+
+.nombreInstrumentoMenu{
+    display: block;
+    font-family: Bkant;
+    font-size: 25px;
+    z-index: 1;
+    position:relative;
+
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out;
+
+}
+
+.claseagregada{
+    background: rgb(0,18,255);
+    background: linear-gradient(90deg, rgba(0,18,255,0) 0%, rgb(13, 17, 77) 49%, rgba(0,18,255,0) 100%);
+    color: white;
+    opacity: 1.0;
+    transition: opacity .55s ease-in-out;
+    -moz-transition: opacity .55s ease-in-out;
+    -webkit-transition: opacity;
+    transition: 0.5s;
+
+}
+
+.claseagregada2{
+
+    color: rgb(0, 0, 0);
+    opacity: 1;
+
+
+}
+
+.containerInstrumento{
+    height: 100%; width: 100%;
+    position: fixed;
+}
+
+.containerSecciones{
+    overflow: auto;
+    overflow-x: hidden;
+    padding-right: 10px;
+    height:calc(100% - 150px); /* saca el alto de la ventana y le resto 150px que es lo que roba el resto de los elementos html en la pantalla*/
+    /*height: 72vh;*/
+    position: fixed; /* position: fixed es necesaria para que el height funcione correctamente con calc()*/
+
+}
+
+.containerModelos{
+    overflow: auto;
+    overflow-x: hidden;
+    position: fixed;
+    width: calc(100% - 34vw);
+    padding-right: 10px;
+    height:calc(100% - 165px);
+}
+
+.estiloTituloSecciones{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.introTexto{
+    max-height: 360px;
+    overflow: auto;
+    overflow-x: hidden;
+    padding-right: 10px;
+}
+
+.leyenda{
+    font-weight: bold;
+}
+
+
+/*----------------------- prueba configuracion menu secciones -------------------------------*/
+
+.menu-content {
+    max-height: 0;
+    overflow: hidden;
+    font-family: 'Oswald', sans-serif; 
+    padding: 0 0 0 50px;
+    transition: 1s;
+    -moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+    
+}
+.collapsible-menu {
+    background-color: rgb(255, 255, 255);
+
+    border-bottom: 3px solid #CDE700;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+}
+.collapsible-menu ul {
+    list-style-type: none;
+    padding: 0;
+    -webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+
+}
+.collapsible-menu a {
+    display:block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.collapsible-menu label {
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 20px;
+    display: block;
+    cursor: pointer;
+    background: url(./assets/img/menu.svg) no-repeat left center;
+    background-size:contain;
+    padding: 10px 0 10px 50px;
+
+}
+
+input[type=checkbox]:checked + label {
+    background-image: url(./assets/img/delete.svg) no-repeat left center;
+    background-size:contain;
+}
+
+input#menu {
+    display: none;
+}
+
+input:checked ~ .menu-content {
+    max-height: 100%;
+
+}
+
+/*---------------------------------*/
+
+li a {text-decoration : none; color : #2d2f31;}
+
+
+.Menu-desplegable-secciones {
+  width : 300px; 
+  background : #474747; 
+  margin : 0px auto; 
+  border-bottom: 3px solid #afafaf;
+  display: none;
+}
+
+.menu-boton {
+    margin-top: 10px;
+    padding : 10px;
+    background : #474747; 
+    color : white;
+    font-size : 1.5em;
+    font-variant : small-caps;
+    cursor : pointer;
+    display: block;
+}
+
+
+.slide {
+  clear:both;
+  width:100%;
+  height:0px;
+  overflow: hidden;
+
+  transition: height .4s ease;
+  color: #AAAAAA;
+}
+
+.slide li {padding : 10px; list-style-type: none;}
+
+.slide li a {
+    color: aliceblue;
+}
+
+#touch {position: absolute; opacity: 0; height: 0px;}    
+
+#touch:checked + .slide {height: 300px;} 
+
+
+/*---------------------------------*/
+
+.spinner {
+    border: 5px solid rgba(0, 0, 0, 0.3);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border-left-color: #7d47ff;
+    margin: 0 auto;
+    margin-top: 20px;
+    animation: spin 1s ease infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: -15px 4px;
+}

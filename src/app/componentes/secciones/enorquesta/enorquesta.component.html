@@ -1,0 +1,28 @@
+<div style="margin-left: 10px; margin-right: 10px; text-align: center;">
+    <h1 class="estiloTituloSecciones">{{articuloInstrumento}} {{instrumento.instrumento}} dentro de la orquesta</h1>
+    <div class="containerModelos">
+        <swiper
+        class="mb-5"
+        [slidesPerView]="1"
+        [navigation]="true"
+        [pagination]="true"
+        [pagination]="{ clickable: true }"
+        [centeredSlides]="true"
+        [spaceBetween]="50">
+            <ng-template *ngFor="let img of enOrquesta[0].info" swiperSlide>
+                <img class="mx-auto d-block img-fluid" src="../../../../assets/categorias/{{instrumento.categoria}}/{{instrumento.instrumento}}/img/enorquesta/{{img.URLimg}}" alt="">
+            
+            </ng-template> <!-- crear esta etiqueta con ngFor trayendo las imagenes de la carpeta modelos-->
+        </swiper>
+
+        <div *ngFor="let objeto of enOrquesta">
+            <app-reproductor-audio *ngIf="objeto.audio" [categoria]="instrumento.categoria" [instrumento]="instrumento.instrumento" [nombreAudio]="objeto.URLaudio" style="display:inline-block; margin-top:-50px"></app-reproductor-audio>
+            <p *ngIf="objeto.txtaudio" class="leyenda">{{objeto.txtaudio}}</p>
+        </div>
+
+        <img style="margin-bottom: 30px;" src="../../../../assets/img/note separador.gif">
+    </div>
+    <!-- <p class="introTexto" style="" [innerHTML]="txtEnElTiempo"></p> -->
+
+
+</div>

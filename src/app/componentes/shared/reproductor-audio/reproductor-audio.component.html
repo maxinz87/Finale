@@ -1,0 +1,11 @@
+<div>
+    <div  style="display:flex; height: 50px; width: 50px;">
+        <img *ngIf="playing" src="../../../../assets/img/playing.gif" style="width: 50px;" alt="">
+    </div>
+
+    <div style="display: block;">
+        <a *ngIf="!playing"  (click)="reproductorServicio()"><i class="bi bi-play-circle-fill" style="font-size: 2.5em; color: rgb(0, 83, 0);"></i></a>
+        <a *ngIf="playing"  (click)="reproductorServicio()"><i class="bi bi-stop-circle-fill" style="font-size: 2.5em; color: rgb(83, 0, 0);"></i></a>
+    </div>
+
+</div>

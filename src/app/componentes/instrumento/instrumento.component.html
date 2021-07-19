@@ -1,0 +1,59 @@
+
+<div class="containerInstrumento"> <!-- se le quitaron las clases row y g-0 para que en dispositivos moviles pueda verse el alto 100% sin que agregue espacios-->
+    
+    <div class="row justify-content-center g-0" style="height: 100%;"> <!-- agregando style="height: 100%;" logro que cubra todo el alto del container padre-->
+
+        <div class=" col-lg-4 col-xs-8 g-0" style="text-align: center; background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(2px);">
+
+            <h1 style="margin-top: 10px;">{{dataInstrumento.nombre}}</h1>
+            <div class="row g-0">
+                <img src="../../../assets/categorias/{{parametrosURL['categoria']}}/{{parametrosURL['instrumento']}}/img/{{dataInstrumento.URLimgprincipal}}" class="img-fluid" alt="...">
+            
+            </div>
+            <div class="row g-0 containerSonidosPrincipalesIntr">
+                <div class="col">
+                    <app-reproductor-audio  *ngFor="let audio of audiosPrincipal" [categoria]="parametrosURL.categoria" [instrumento]="dataInstrumento.nombre" [nombreAudio]="audio.URL" style="display: inline-block; margin-right: 20px;"></app-reproductor-audio>
+                </div>
+            </div>
+
+            <div *ngIf="varError" class="spinner"></div> <!-- tener en cuenta para mostrarlo cuando haya algun problema de reproduccion de sonido!-->
+        </div>
+
+        <div class=" col-lg-8 col-xs-4 g-0" style="position:relative; background: rgba(189, 189, 189, 0.4); height: 100%;">
+            <div class="row g-0 d-none d-lg-block" >
+                <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-primary" [routerLink]="['intro']">Introducción</button>
+                    <button type="button" class="btn btn-primary" [routerLink]="['regynot']">Registro y notación</button>
+                    <button type="button" class="btn btn-primary" [routerLink]="['partes']">Partes</button>
+                    <button type="button" class="btn btn-primary" [routerLink]="['modelos']">Modelos</button>
+                    <button type="button" class="btn btn-primary" [routerLink]="['eneltiempo']">{{parametrosURL.instrumento}} en el tiempo</button>
+                    <button type="button" class="btn btn-primary" [routerLink]="['enorquesta']">{{parametrosURL.instrumento}} en orquesta</button>
+                    <button type="button" class="btn btn-primary" [routerLink]="['../']">Volver</button>
+                </div>
+            </div>
+            <div class="row g-0" style="height: auto;  margin-bottom: 10px;">
+
+                <nav class="Menu-desplegable-secciones">
+
+                    <label for="touch"><span class="menu-boton"><i class="bi bi-menu-down h2"></i> Menu</span></label>               
+                    <input #menucheckbox type="checkbox" id="touch"> 
+                  
+                    <ul class="slide">
+                        <li><a [routerLink]="['intro']" (click)="clickOpcionMenuDesplegableSecciones()"><i style="margin-right: 20px;" class="bi bi-music-note-beamed"></i>Introducción</a></li>
+                        <li><a [routerLink]="['regynot']" (click)="clickOpcionMenuDesplegableSecciones()"><i style="margin-right: 20px;" class="bi bi-music-note-beamed"></i>Registro y notación</a></li>
+                        <li><a [routerLink]="['partes']" (click)="clickOpcionMenuDesplegableSecciones()"><i style="margin-right: 20px;" class="bi bi-music-note-beamed"></i>Partes</a></li>
+                        <li><a [routerLink]="['modelos']" (click)="clickOpcionMenuDesplegableSecciones()"><i style="margin-right: 20px;" class="bi bi-music-note-beamed"></i>Modelos</a></li>
+                        <li><a [routerLink]="['eneltiempo']" (click)="clickOpcionMenuDesplegableSecciones()"><i style="margin-right: 20px;" class="bi bi-music-note-beamed"></i>{{parametrosURL.instrumento}} en el tiempo</a></li>
+                        <li><a [routerLink]="['enorquesta']" (click)="clickOpcionMenuDesplegableSecciones()"><i style="margin-right: 20px;" class="bi bi-music-note-beamed"></i>En orquesta</a></li>
+                        <li><a [routerLink]="['../']"><i style="margin-right: 20px;" class="bi bi-music-note-beamed"></i>Volver</a></li>
+                    </ul>
+                  
+                  </nav> 
+                <router-outlet></router-outlet>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>

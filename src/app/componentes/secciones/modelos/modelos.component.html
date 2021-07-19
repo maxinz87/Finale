@@ -1,0 +1,58 @@
+<div style="margin-left: 10px; margin-right: 10px; text-align: center;">
+    <h1 class="estiloTituloSecciones">Modelos</h1>
+    <div class="containerModelos">
+        <swiper
+        class="mb-5"
+        [slidesPerView]="1"
+        [navigation]="true"
+        [pagination]="true"
+        [pagination]="{ clickable: true }"
+        [centeredSlides]="true"
+        [spaceBetween]="50"
+        (swiper)="onSwiper($event)"
+        (slideChange)="onSlideChange()">
+        <ng-template *ngFor="let modelo of modelos[0].info" swiperSlide>
+            <img class="mx-auto d-block img-fluid w-100" src="../../../../assets/categorias/{{instrumento.categoria}}/{{instrumento.instrumento}}/img/modelos/{{modelo.URLimg}}" alt="">
+        
+        </ng-template> <!-- crear esta etiqueta con ngFor trayendo las imagenes de la carpeta modelos-->
+        </swiper>
+        <div *ngIf="infoadicional">
+                <div *ngFor="let info of infoadicional.infoadicional">
+                    <h3 *ngIf="info.titulo != '' ">{{info.titulo}}</h3>
+                    <div *ngFor="let masInfo of info.info">
+                        <div *ngIf="masInfo.URLimg">
+                            <img class="mx-auto d-block img-fluid mt-3 mb-3 " src="../../../../assets/categorias/{{instrumento.categoria}}/{{instrumento.instrumento}}/img/modelos/infoadicional/{{masInfo.URLimg}}" alt="">
+                        </div>
+                        <p *ngIf="masInfo.leyenda" class="leyenda" style="margin-bottom: 40px;">{{masInfo.leyenda}}</p>
+                        <span *ngIf="masInfo.txtcontitulo" style="font-weight: bold; margin-bottom: 0px;">{{masInfo.titulotxt}}</span>
+                        <p *ngIf="masInfo.txt != ''" style="margin-bottom: 40px; white-space: pre-wrap;">{{masInfo.txt}}</p>
+
+                        <swiper
+                        style="margin-top: -30px !important;"
+                        *ngIf="masInfo.swiper"
+                        [slidesPerView]="1"
+                        [navigation]="true"
+                        [pagination]="true"
+                        [pagination]="{ clickable: true }"
+                        [centeredSlides]="true"
+                        [spaceBetween]="50"
+                        (swiper)="onSwiper($event)"
+                        (slideChange)="onSlideChange()">
+                        <ng-template *ngFor="let masModelo of masInfo.info" swiperSlide>
+                            <img class="mx-auto d-block img-fluid w-100 px-5" src="../../../../assets/categorias/{{instrumento.categoria}}/{{instrumento.instrumento}}/img/modelos/infoadicional/{{masModelo.URLimg}}" alt="">
+                            <div class="swiper-slide mb-3 leyenda">{{masModelo.leyenda}}</div>
+                        </ng-template> <!-- crear esta etiqueta con ngFor trayendo las imagenes de la carpeta modelos-->
+                        </swiper>
+
+                        <app-reproductor-audio *ngIf="masInfo.audio" [categoria]="instrumento.categoria" [instrumento]="instrumento.instrumento" [nombreAudio]="masInfo.URLaudio" style="display:inline-block; margin-top:-50px"></app-reproductor-audio>
+                        <p class="leyenda" *ngIf="masInfo.txtaudio" [innerHTML]="masInfo.txtaudio"></p>
+                        <img *ngIf="masInfo.separador" style="margin-bottom: 30px;" src="../../../../assets/img/note separador.gif">
+                    </div>
+        
+                </div>
+        </div>
+        <img style="margin-bottom: 30px;" src="../../../../assets/img/note separador.gif">
+
+    </div>
+
+</div>

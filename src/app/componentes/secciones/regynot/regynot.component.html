@@ -1,0 +1,15 @@
+<div style="margin-left: 10px; margin-right: 10px; text-align: center;">
+    <h1 class="estiloTituloSecciones">Registro y notación</h1>
+    <div class="containerModelos">
+        <div style="margin-bottom: 20px;">
+            <img src="../../../../assets/categorias/{{instrumento.categoria}}/{{instrumento.instrumento}}/img/{{escalaPiano.URLescalapiano}}" class="img-fluid"  style="margin-bottom: 10px;" alt="">
+            <p *ngIf="escalaPiano.txt">{{escalaPiano.txt}}</p>
+        </div>
+        <div>
+            <img src="../../../../assets/categorias/{{instrumento.categoria}}/{{instrumento.instrumento}}/img/{{rango.URLrango}}" class="img-fluid" style="margin-bottom: 10px;" alt="">
+            <p *ngIf="rango.txt">{{rango.txt}}</p>
+        </div>
+        <img style="margin-bottom: 30px;margin-top: 30px;" src="../../../../assets/img/note separador.gif">
+    </div>
+
+</div>
